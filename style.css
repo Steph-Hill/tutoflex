@@ -1,0 +1,102 @@
+*{
+
+    margin: 0px;
+
+}
+
+.container{
+
+    background-color: orange;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.box{
+background-color: azure;
+width: 50%;
+height: 200px;
+margin: 10px;
+color: rgb(240, 14, 14);
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+@media screen and (max-width:600px){
+    
+    .container{
+        flex-direction: column;
+
+
+    }
+
+    .box{
+
+        width: 100%;
+
+    }
+
+}
+
+/* debut menu header */
+
+header{
+
+    background-color: beige;
+    height: 4rem;
+    display: flex;
+
+}
+
+.menu{
+    display: flex;
+    padding: 0;
+    background-color: rgba(136, 170, 250, 0.223);
+    justify-content: end; /* direction des menus*/
+
+}
+
+.menu li{
+
+    list-style-type: none;/*  suppression des points de la liste */
+}
+
+.menu a{  
+    display: block;
+    width: 120px;/* application d'ecart entre lien */
+    text-decoration: none; /*supp du trait en bas du mot*/
+    margin: 0.5rem; /*les espacement exterieurs*/
+    padding: 0.4rem 0;/*les espacement interieurs*/
+    text-align: center;
+    background-color: rgba(24, 216, 230, 0.649);
+    border-radius: 5rem;
+    border: 1px solid rgb(23, 48, 139);
+    border-style: dashed;
+    transition: all 1s; /*animation pour apparition du hover*/
+}
+
+.menu a:hover{ /*passage de la souris*/
+
+    background-color: black;
+    color: aliceblue;
+    border-color: blue;
+
+
+}
+
+.menu a.actif{
+
+    background-color: rgba(255, 0, 0, 0.46);
+    color: rgb(15, 8, 8);
+    border-color: aqua;
+
+
+}
+
+
+
+/* fin menu header */
